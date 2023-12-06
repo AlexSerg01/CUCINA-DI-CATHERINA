@@ -23,14 +23,19 @@
     <!-- ==================== -->
     <!-- ====== HEADER ====== -->
     <!-- ==================== -->
-    <header>
+    <header class="header">
       <div class="container">
         <nav class="nav">
-          <svg class="logo_svg" width="24" height="24">
+          <svg class="logo-svg" width="24" height="24">
             <use href="./image/icons.svg#logo-icon"></use>
           </svg>
-          <a href="./index.html">CUCINA</a>
-          <ul class="nav__ul">
+          <a href="./index.html" class="logo-text">CUCINA</a>
+          <button type="button" class="menu-button">
+            <svg class="menu-icon" width="31" height="16">
+              <use href="./image/icons.svg#menu-icon"></use>
+            </svg>
+          </button>
+          <ul class="nav-ul">
             <li class="nav__li"><a href="http://">Home</a></li>
             <li class="nav__li"><a href="http://">Store</a></li>
             <li class="nav__li"><a href="http://">Recipes</a></li>
@@ -49,8 +54,28 @@
       <!-- ----------------------- -->
       <section class="first-section">
         <div class="container">
-          <h1 class="main-title">CUCINA DI CATHERINA</h1>
-          <p class="text-main-title">We know, you will love our product</p>
+          <h1 class="main-title">
+            CUCINA DI<br />
+            CATHERINA
+          </h1>
+          <p class="text-main-title">
+            We know,<br />
+            you will <span class="text-main-title-span">love</span> our product
+          </p>
+          <svg class="icon-frame-mobile" width="414" height="637">
+            <use href="./image/icons.svg#icon-frame-mobile"></use>
+          </svg>
+          <img
+            srcset="
+              ./image/mobile-img/souse.png 1x,
+              ./image/mobile-img/souse.png 2x
+            "
+            src="./image/desktop-img/souse.png"
+            alt="souse"
+            class="souse-mobile-img"
+            width="202"
+            height="350"
+          />
           <button class="main-order-button">Buy now</button>
           <ul class="main-counts-ul">
             <li class="main-counts-li">
@@ -62,12 +87,6 @@
               factories around the world
             </li>
           </ul>
-          <img
-            src="./image/desktop-img/souse@2x.png"
-            alt="souse"
-            width="445"
-            height="576"
-          />
           <ul class="social-links">
             <li class="social-link">
               <a href="">
@@ -105,29 +124,33 @@
       <!-- ------------------------ -->
       <section class="second-section">
         <div class="container">
-          <h2>Store</h2>
+          <h2 class="visually-hidden">Store</h2>
           <button class="top_list_btn">
-            <svg class="top_list_btn_svg">
-              <use></use>
+            <svg class="top_list_btn_svg" width="16" height="16">
+              <use href="./image/icons.svg#icon-ep_arrow"></use>
             </svg>
           </button>
-          <img src="" alt="" class="hero-img" />
-          <div class="hero-div">
-            <h3 class="hero-div-title">Classic sauce</h3>
-            <p class="hero-div-text">
-              The most delicate taste of tomatoes, combined with branded spices
-              and white wine, will make your dish incredibly tasty.
-            </p>
-            <button class="hero-btn">Buy now</button>
+          <div class="hero-recipe">
+            <img src="" alt="img" class="hero-img" />
+            <div class="hero-div">
+              <h3 class="hero-div-title">Classic sauce</h3>
+              <p class="hero-div-text">
+                The most delicate taste of tomatoes, combined with branded
+                spices and white wine, will make your dish incredibly tasty.
+              </p>
+              <button class="hero-btn">Buy now</button>
+            </div>
           </div>
-          <img src="" alt="" class="hero-img" />
-          <div class="hero-div">
-            <h3 class="hero-div-title">Spicy sauce</h3>
-            <p class="hero-div-text">
-              For thrill-seekers, we added hot chili pepper to our sauce, it
-              also reveals all the tastes and aromas of the sauce well.
-            </p>
-            <button class="hero-btn">Buy now</button>
+          <div class="hero-recipe">
+            <div class="hero-div">
+              <h3 class="hero-div-title">Spicy sauce</h3>
+              <p class="hero-div-text">
+                For thrill-seekers, we added hot chili pepper to our sauce, it
+                also reveals all the tastes and aromas of the sauce well.
+              </p>
+              <button class="hero-btn">Buy now</button>
+              <img src="" alt="img" class="hero-img" />
+            </div>
           </div>
           <button class="bottom_list_btn">
             <svg class="bottom_list_btn_svg">
