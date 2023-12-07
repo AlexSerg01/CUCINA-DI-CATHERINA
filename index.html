@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html lang="en">
+  <!DOCTYPE html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -130,31 +130,45 @@
               <use href="./image/icons.svg#icon-ep_arrow"></use>
             </svg>
           </button>
-          <div class="hero-recipe">
-            <img src="" alt="img" class="hero-img" />
-            <div class="hero-div">
-              <h3 class="hero-div-title">Classic sauce</h3>
-              <p class="hero-div-text">
-                The most delicate taste of tomatoes, combined with branded
-                spices and white wine, will make your dish incredibly tasty.
-              </p>
-              <button class="hero-btn">Buy now</button>
-            </div>
-          </div>
-          <div class="hero-recipe">
-            <div class="hero-div">
-              <h3 class="hero-div-title">Spicy sauce</h3>
-              <p class="hero-div-text">
-                For thrill-seekers, we added hot chili pepper to our sauce, it
-                also reveals all the tastes and aromas of the sauce well.
-              </p>
-              <button class="hero-btn">Buy now</button>
-              <img src="" alt="img" class="hero-img" />
-            </div>
-          </div>
+          <ul class="hero-recipes">
+            <li class="hero-recipe">
+              <img
+                srcset="./image/mobile-img/ketchup-or-tomato-sauce-with-fresh-tomato 1-min.png 1x,
+            ./image/mobile-img/ketchup-or-tomato-sauce-with-fresh-tomato 1@2x-min.png 2x"
+                src="./image/mobile-img/ketchup-or-tomato-sauce-with-fresh-tomato 1-min.png"
+                alt="img"
+                class="hero-img"
+              />
+              <div class="hero-recipe-div">
+                <h3 class="hero-div-title">Classic sauce</h3>
+                <p class="hero-div-text">
+                  The most delicate taste of tomatoes, combined with branded
+                  spices and white wine, will make your dish incredibly tasty.
+                </p>
+                <button class="hero-btn">Buy now</button>
+              </div>
+            </li>
+            <li class="hero-recipe">
+              <div class="hero-recipe-div">
+                <h3 class="hero-div-title">Spicy sauce</h3>
+                <p class="hero-div-text">
+                  For thrill-seekers, we added hot chili pepper to our sauce, it
+                  also reveals all the tastes and aromas of the sauce well.
+                </p>
+                <button class="hero-btn">Buy now</button>
+              </div>
+              <img
+                srcset="./image/mobile-img/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view 1-min.png 1x,
+              ./image/mobile-img/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view 1@2s-min.png 2x"
+                src="./image/mobile-img/red-hot-chilli-sauce-tomato-ketchup-chilli-sauce-puree-with-chili-pepper-vegetables-tomatoes-and-garlic-on-on-stone-surface-top-view 1-min.png"
+                alt="img"
+                class="hero-img"
+              />
+            </li>
+          </ul>
           <button class="bottom_list_btn">
-            <svg class="bottom_list_btn_svg">
-              <use></use>
+            <svg class="bottom_list_btn_svg" width="16" height="16">
+              <use href="./image/icons.svg#icon-ep_arrow"></use>
             </svg>
           </button>
         </div>
@@ -164,19 +178,35 @@
       <!-- ----------------------- -->
       <section class="three-section">
         <div class="container">
-          <h2 class="videos-title">Recipes</h2>
+          <h2 class="videos-title visually-hidden">Recipes</h2>
           <ul class="videos-lists">
             <li class="video-li">
-              <img src="" alt="" class="video-img" /><button
-                class="play-video-btn"
-              ></button>
-              <h3 class="video-title">Bell pepper pasta</h3>
+              <img
+                srcset="./image/mobile-img/image 5-min.png 1x,
+              ./image/mobile-img/image 5@2x-min.png 2x"
+                src="./image/mobile-img/image 5-min.png"
+                alt=""
+                class="video-img"
+              /><button class="play-video-btn">
+                <svg>
+                  <use href="./image/icons.svg#icon-play-video"></use>
+                </svg>
+              </button>
+              <h3 class="video-title">Tomato paste</h3>
             </li>
             <li class="video-li">
-              <img src="" alt="" class="video-img" /><button
-                class="play-video-btn"
-              ></button>
-              <h3 class="video-title">Tomato paste</h3>
+              <img
+                srcset="./image/mobile-img/image 4-min.png 1x,
+              ./image/mobile-img/image 4@2x-min.png 2x"
+                src="./image/mobile-img/image 4-min.png"
+                alt=""
+                class="video-img"
+              /><button class="play-video-btn">
+                <svg>
+                  <use href="./image/icons.svg#icon-play-video"></use>
+                </svg>
+              </button>
+              <h3 class="video-title">Bell pepper pasta</h3>
             </li>
           </ul>
         </div>
@@ -186,12 +216,27 @@
       <!-- ---------------------- -->
       <section class="four-section">
         <div class="container">
-          <div class="slider-img"><img src="" alt="" /></div>
-          <div class="slider-img"><img src="" alt="" /></div>
-          <div class="slider-img"><img src="" alt="" /></div>
-          <div class="slider-img"><img src="" alt="" /></div>
-          <div class="slider-img"><img src="" alt="" /></div>
-          <div class="slider-img"><img src="" alt="" /></div>
+          <button class="prev-btn" id="prevBtn" type="button">
+            <svg>
+              <use href="./image/icons.svg#icon-ep_arrow"></use>
+            </svg>
+          </button>
+          <ul id="slider">
+            <li class="slider-img">
+              <img src="./image/mobile-img/image 6.jpg" alt="" />
+            </li>
+            <li class="slider-img">
+              <img src="./image/mobile-img/kids.jpg" alt="" />
+            </li>
+            <li class="slider-img">
+              <img src="./image/mobile-img/farmer.jpg" alt="" />
+            </li>
+          </ul>
+          <button class="next-btn" id="nextBtn" type="button">
+            <svg>
+              <use href="./image/icons.svg#icon-ep_arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </main>
@@ -266,5 +311,6 @@
         <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>
       </p>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

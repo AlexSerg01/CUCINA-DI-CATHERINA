@@ -268,14 +268,14 @@ body {
   /* ---------------------------- */
   /* ---------------------------- */
   .second-section {
-    padding: 108px 0;
+    padding: 100px 0;
   }
 
   .second-section .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .top_list_btn {
@@ -291,13 +291,19 @@ body {
     fill: var(--Genoa);
   }
 
-  .hero-recipe {
+  .hero-recipes {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    row-gap: 32px;
   }
 
-  .hero-div {
+  .hero-recipe {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
+
+  .hero-recipe-div {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -305,7 +311,10 @@ body {
   }
 
   .hero-img {
-    width: 199px;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px 0px #7c7070;
   }
 
   .hero-div-title {
@@ -343,4 +352,70 @@ body {
     line-height: normal;
     text-wrap: nowrap;
   }
+
+  .bottom_list_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: inherit;
+    border: none;
+  }
+
+  .bottom_list_btn_svg {
+    fill: var(--Genoa);
+  }
+
+  .three-section {
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  .videos-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .video-li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .play-video-btn {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    padding: 23px 21px 23px 25px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 94px;
+    background: rgba(243, 243, 243, 0.9);
+    border: none;
+    position: absolute;
+  }
+
+  .video-title {
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .video-li:first-child {
+    margin-left: 138px;
+  }
+
+  .video-li:last-child {
+    margin-right: 138px;
+  }
+  /* ------------------------ */
+  /* ------------------------ */
+  /* ------------------------ */
 }
